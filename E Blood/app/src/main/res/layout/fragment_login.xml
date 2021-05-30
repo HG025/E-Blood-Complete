@@ -1,0 +1,74 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:id="@+id/gtiop"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.babarmustafa.saylani_marathon.Fragments.Login">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/rightmessageview"
+            android:id="@+id/e_email"
+            android:hint="Email"
+            android:text="babar@g.com"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dip"
+            android:background="@drawable/rightmessageview"
+            android:layout_marginTop="10dp"
+            android:id="@+id/e_pass"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:text="1234567"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Login"
+            android:background="@drawable/leftmessageview"
+
+            android:layout_marginTop="50dp"
+            android:id="@+id/login_buttobn"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:padding="8dp"
+            android:background="@drawable/rightmessageview"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="NO Account Yet? Want to Create?"
+            android:id="@+id/singup_calling_button"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:padding="8dp"
+            android:background="@drawable/rightmessageview"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="Forgot Password?"
+            android:id="@+id/forgotPassword"/>
+    </LinearLayout>
+</ScrollView>

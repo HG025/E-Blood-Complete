@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/mesages_view"
+    android:textSize="15dp"
+    android:hint="meesage"
+    android:padding="10dp"
+    android:textColor="@color/black"
+    android:background="@drawable/leftmessageview"
+    android:layout_gravity="right"
+    android:layout_marginTop="10dp"
+    android:visibility="visible"
+    />
+
+
+<ImageView
+    android:layout_below="@+id/mesages_view"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:id="@+id/for_file_view"
+    android:scaleType="fitXY"
+    android:padding="10dp"
+    android:background="@drawable/leftmessageview"
+    android:layout_gravity="right"
+    android:layout_marginTop="15dp"
+    android:visibility="gone"
+   />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mesages_time_view"
+        android:textSize="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="time"
+        android:layout_gravity="right"
+        android:visibility="visible"
+        />
+
+
+</LinearLayout>
+
+

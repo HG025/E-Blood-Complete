@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "178015936928",
+    "firebase_url": "https://blood-37d51.firebaseio.com",
+    "project_id": "blood-37d51",
+    "storage_bucket": "blood-37d51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178015936928:android:1a814342fcb6d231",
+        "android_client_info": {
+          "package_name": "com.example.mt_2016.marathon_blood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178015936928-60uhefn6a06npe60vsdmtmkgmhiejq4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3rdwBdKMqFH1S73pErQg1J_q9hIo85yw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

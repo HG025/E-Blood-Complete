@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    tools:context="com.example.mt_2016.marathon_blood.Activities.PostActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/b_g"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                />
+
+            <EditText
+                android:id="@+id/b_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="quantity"
+                android:inputType="number" />
+
+            <Spinner
+                android:id="@+id/urgency"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <Spinner
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <Spinner
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <Spinner
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <Spinner
+                android:id="@+id/hospital"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <Spinner
+                android:id="@+id/relation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/contact_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="contact Number"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/instruction"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Instruction" />
+
+
+
+            <Button
+                android:id="@+id/post_requires"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/buttonpost"
+                android:text="Post" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

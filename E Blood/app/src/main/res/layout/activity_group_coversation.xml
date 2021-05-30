@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_group_coversation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mt_2016.marathon_blood.Activities.Group_coversation">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/booking"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center"
+        android:background="?attr/colorPrimary"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/throwbutton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center|start"
+                android:background="@drawable/back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:gravity="center|start"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/group_pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:civ_border_width="0dp" />
+
+            <TextView
+                android:id="@+id/g_ni"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:fontFamily=""
+                android:gravity="center"
+                android:hint="abc"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/g_messages_conversation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll">
+
+    </ListView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/g_editMessage"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="5"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="write message here"
+            android:textColorHint="@color/white"
+            android:background="@drawable/rightmessageview"
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxLines="5"
+            android:minLines="3"
+            android:scrollHorizontally="false" />
+
+        <Button
+            android:id="@+id/g_button_Send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/leftmessageview"
+            android:gravity="center"
+            android:text="send"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/g_for_files"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:src="@drawable/unnamed" />
+
+        <ImageButton
+            android:id="@+id/g_for_images"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+
+            android:src="@drawable/icon_image_picker" />
+
+        <ImageButton
+            android:id="@+id/g_for_sound"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+
+            android:src="@drawable/mus" />
+
+        <ImageButton
+            android:id="@+id/g_for_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+
+            android:src="@drawable/ca" />
+
+        <ImageButton
+            android:id="@+id/g_for_video"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:src="@drawable/vid" />
+    </LinearLayout>
+
+</LinearLayout>

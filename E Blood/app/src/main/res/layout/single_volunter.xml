@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tree_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:id="@+id/time_of_volunter_request"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/check_confirm"/>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <Button
+           android:layout_width="150dp"
+           android:layout_height="30dp"
+           android:text="donated"
+           android:layout_marginLeft="40dp"
+           android:background="#3F51B5"
+           android:textColor="#FFFFFF"
+           android:visibility="gone"
+           android:id="@+id/btn_donated"/>
+       <Button
+           android:layout_width="150dp"
+           android:layout_height="30dp"
+           android:text=" not donated"
+           android:background="#9FA8DA"
+           android:textColor="#FFFFFF"
+           android:id="@+id/btn_not_donated"/>
+   </LinearLayout>
+</LinearLayout>
